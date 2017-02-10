@@ -95,7 +95,7 @@ func TestIP4Net(t *testing.T) {
 		t.Errorf("%s overlaps %s", n1, n2)
 	}
 
-	n2 = mkIP4Net("7.2.4.0", 22)
+	n2 = mkIP4Net("1.2.4.0", 22)
 	if n1.Overlaps(n2) {
 		t.Errorf("%s overlaps %s", n1, n2)
 	}
